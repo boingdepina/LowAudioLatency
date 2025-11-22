@@ -16,12 +16,12 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build
-      run: cargo build --verbose
+      run: cargo build --verbose --release
     - name: Run tests
-      run: cargo test --verbose
+      run: cargo test --verbose --release
 
     - name: Upload Release Artifact
       uses: actions/upload-artifact@v4
       with:
         name: windows-release-build
-        path: target/release/*.exe
+        path: target/release/low_audio_latency-c45f7cddb954e1e1.exe
