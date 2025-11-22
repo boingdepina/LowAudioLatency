@@ -10,7 +10,8 @@ env:
   CARGO_TERM_COLOR: always
 
 jobs:
-  build:
+  build-windows:
+    runs-on: windows-latest
 
     runs-on: ubuntu-latest
 
