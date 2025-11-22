@@ -24,4 +24,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: windows-release-build
-        path: target/release/low_audio_latency-c45f7cddb954e1e1.exe
+        path: target\release\deps\*.exe
